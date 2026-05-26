@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فزعة — مساعدة على الطريق</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#0B0F1A;--bg2:#111827;--bg3:#1C2333;--bg4:#242D42;--bg5:#2D3748;--or:#E8500A;--gr:#10B981;--re:#EF4444;--am:#F59E0B;--bl:#3B82F6;--pu:#8B5CF6;--tx:#F1F5F9;--mu:#94A3B8;--mu2:#64748B;--br:rgba(255,255,255,0.07);--brs:rgba(255,255,255,0.14);}
+html,body{height:100%;font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;}
+*::-webkit-scrollbar{width:3px;}*::-webkit-scrollbar-thumb{background:var(--bg5);border-radius:2px;}
+.h{display:none!important;}
+.f{display:flex;}.fc{flex-direction:column;}.ac{align-items:center;}.jb{justify-content:space-between;}
+.g8{gap:8px;}.g12{gap:12px;}
+.f11{font-size:11px;}.f12{font-size:12px;}.f13{font-size:13px;}.f14{font-size:14px;}.f16{font-size:16px;}.f18{font-size:18px;}.f22{font-size:22px;}
+.w5{font-weight:500;}.w7{font-weight:700;}
+.tor{color:var(--or);}.tgr{color:var(--gr);}.tre{color:var(--re);}.tam{color:var(--am);}.tbl{color:var(--bl);}.tmu{color:var(--mu);}
+.mb4{margin-bottom:4px;}.mb8{margin-bottom:8px;}.mb12{margin-bottom:12px;}.mb14{margin-bottom:14px;}.mb16{margin-bottom:16px;}
+.tc{text-align:center;}
+@keyframes fi{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+@keyframes pi{0%,100%{box-shadow:0 0 0 4px rgba(16,185,129,.2);}50%{box-shadow:0 0 0 12px rgba(16,185,129,.03);}}
+@keyframes po{0%,100%{box-shadow:0 0 0 4px rgba(232,80,10,.25);}50%{box-shadow:0 0 0 14px rgba(232,80,10,.04);}}
+@keyframes sp{to{transform:rotate(360deg);}}
+@keyframes ni{from{transform:translateY(-100%);}to{transform:translateY(0);}}
+@keyframes pb{0%,100%{transform:scale(1);}50%{transform:scale(1.15);}}
+.fi{animation:fi .3s ease;}
+.spin{width:30px;height:30px;border:3px solid var(--bg4);border-top-color:var(--or);border-radius:50%;animation:sp .8s linear infinite;margin:0 auto;}
+.card{background:var(--bg3);border-radius:14px;border:1px solid var(--br);padding:14px;margin-bottom:12px;}
+.csm{background:var(--bg4);border-radius:9px;padding:10px 12px;}
+.cor{background:rgba(232,80,10,.08);border:1px solid rgba(232,80,10,.25);}
+.cgr{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500;}
+.bgr{background:rgba(16,185,129,.15);color:#6EE7B7;}.bre{background:rgba(239,68,68,.15);color:#FCA5A5;}
+.bam{background:rgba(245,158,11,.15);color:#FCD34D;}.bbl{background:rgba(59,130,246,.15);color:#93C5FD;}
+.bor{background:rgba(232,80,10,.15);color:#FDBA74;}
+.btn{border:none;padding:11px 16px;border-radius:10px;font-size:13px;font-weight:500;cursor:pointer;font-family:'Tajawal',sans-serif;transition:all .15s;display:inline-flex;align-items:center;justify-content:center;gap:6px;}
+.btn:active{transform:scale(.97);}
+.bfw{width:100%;}
+.bor2{background:var(--or);color:white;}.bor2:hover{background:#d4460a;}
+.bgr2{background:var(--gr);color:white;}
+.bre2{background:var(--re);color:white;}
+.bdk{background:var(--bg4);color:var(--tx);}.bdk:hover{background:var(--bg5);}
+.bbl2{background:var(--bl);color:white;}
+.bgh{background:transparent;color:var(--mu);border:1px solid var(--br);}
+.bsm{padding:7px 12px;font-size:12px;}
+.blg{padding:14px;font-size:15px;}
+.inp{background:var(--bg4);border:1px solid var(--br);border-radius:9px;padding:10px 14px;color:var(--tx);font-size:13px;font-family:'Tajawal',sans-serif;width:100%;outline:none;transition:border .2s;}
+.inp:focus{border-color:rgba(232,80,10,.5);}
+.inp::placeholder{color:var(--mu2);}
+.lbl{font-size:12px;color:var(--mu);margin-bottom:5px;}
+.av{display:flex;align-items:center;justify-content:center;border-radius:50%;font-weight:600;flex-shrink:0;}
+.av36{width:36px;height:36px;font-size:13px;}.av44{width:44px;height:44px;font-size:15px;}.av60{width:60px;height:60px;font-size:20px;}
+.avor{background:rgba(232,80,10,.15);color:var(--or);}
+.avgr{background:rgba(16,185,129,.15);color:#6EE7B7;}
+.avbl{background:rgba(59,130,246,.15);color:#93C5FD;}
+.avpu{background:rgba(139,92,246,.15);color:#C4B5FD;}
+.tgl{position:relative;width:46px;height:26px;cursor:pointer;}
+.tgl input{display:none;}
+.tgl-t{position:absolute;inset:0;border-radius:13px;background:#374151;transition:.3s;}
+.tgl input:checked+.tgl-t{background:var(--gr);}
+.tgl-h{position:absolute;width:20px;height:20px;background:white;border-radius:50%;top:3px;right:3px;transition:.3s;}
+.tgl input:checked~.tgl-h{right:auto;left:3px;}
+.mbox{background:var(--bg2);border-radius:13px;border:1px solid var(--br);position:relative;overflow:hidden;}
+.msvg{position:absolute;inset:0;opacity:.13;pointer-events:none;}
+.mpin{position:absolute;transform:translate(-50%,-100%);text-align:center;pointer-events:none;transition:top .8s ease,left .8s ease;}
+.mpd{width:16px;height:16px;border-radius:50%;border:3px solid white;margin:auto;}
+.mpd.or{background:var(--or);animation:po 1.5s infinite;}
+.mpd.gr{background:var(--gr);animation:pi 1.5s infinite;}
+.mpd.bl{background:var(--bl);}
+.mpl{font-size:10px;color:white;padding:2px 6px;border-radius:5px;margin-top:4px;white-space:nowrap;}
+.mpl.or{background:rgba(232,80,10,.9);}
+.mpl.gr{background:rgba(16,185,129,.9);}
+.mpl.bl{background:rgba(59,130,246,.9);}
+.ddot{position:absolute;width:13px;height:13px;border-radius:50%;border:2px solid;cursor:pointer;transform:translate(-50%,-50%);transition:top .6s ease,left .6s ease;}
+.ddot.av2{background:var(--gr);border-color:#6EE7B7;box-shadow:0 0 0 3px rgba(16,185,129,.2);}
+.ddot.bz{background:var(--am);border-color:#FCD34D;box-shadow:0 0 0 3px rgba(245,158,11,.2);}
+.ddot.of{background:#475569;border-color:#64748B;}
+.topbar{background:var(--bg2);padding:13px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--br);flex-shrink:0;}
+.btmbar{background:var(--bg2);border-top:1px solid var(--br);display:flex;flex-shrink:0;}
+.bnav{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px 4px;border:none;background:transparent;color:var(--mu);cursor:pointer;font-size:10px;font-family:'Tajawal',sans-serif;transition:color .2s;position:relative;}
+.bnav i{font-size:19px;}.bnav.on{color:var(--or);}
+.nbadge{position:absolute;top:5px;right:calc(50% - 16px);background:var(--re);color:white;border-radius:10px;padding:1px 5px;font-size:9px;animation:pb 1s infinite;}
+.sidebar{width:220px;background:var(--bg2);border-left:1px solid var(--br);display:flex;flex-direction:column;flex-shrink:0;height:100%;}
+.slogo{padding:18px 16px;border-bottom:1px solid var(--br);}
+.snav-list{flex:1;padding:10px 0;overflow-y:auto;}
+.snav{display:flex;align-items:center;gap:10px;padding:10px 16px;cursor:pointer;color:var(--mu);font-size:13px;transition:all .2s;border-right:3px solid transparent;}
+.snav:hover{background:var(--bg3);color:var(--tx);}.snav.on{background:var(--bg3);color:var(--or);border-right-color:var(--or);}
+.snav i{font-size:17px;flex-shrink:0;}
+.sbar{display:flex;gap:3px;margin-bottom:16px;}
+.sbi{flex:1;height:4px;background:var(--bg4);border-radius:2px;transition:background .4s;}.sbi.dn{background:var(--or);}
+.scg{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:14px;}
+.sc{background:var(--bg3);border:2px solid transparent;border-radius:13px;padding:14px 8px;text-align:center;cursor:pointer;transition:all .2s;}
+.sc:hover{border-color:rgba(232,80,10,.35);}.sc.sl{border-color:var(--or);background:rgba(232,80,10,.08);}
+.popt{border:2px solid var(--br);border-radius:12px;padding:14px;cursor:pointer;transition:all .2s;margin-bottom:10px;}
+.popt.sl{border-color:var(--or);background:rgba(232,80,10,.06);}
+.pchk{width:20px;height:20px;border-radius:50%;border:2px solid var(--br);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.stcard{background:var(--bg3);border-radius:12px;border:1px solid var(--br);padding:14px;text-align:center;}
+.stnum{font-size:24px;font-weight:700;margin-bottom:3px;}.stlbl{font-size:11px;color:var(--mu);}
+.pbar{height:5px;background:var(--bg4);border-radius:3px;overflow:hidden;}
+.pfill{height:100%;border-radius:3px;background:var(--or);transition:width .7s;}
+.pdot{display:inline-block;width:8px;height:8px;border-radius:50%;}
+.pdot.on{background:var(--gr);box-shadow:0 0 0 3px rgba(16,185,129,.3);}.pdot.of{background:#475569;}
+.slbl{font-size:11px;color:var(--mu);letter-spacing:.5px;margin-bottom:10px;font-weight:500;}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;}
+.tbl th{font-size:11px;color:var(--mu);font-weight:500;padding:8px 10px;border-bottom:1px solid var(--br);text-align:right;}
+.tbl td{padding:10px;border-bottom:1px solid var(--br);vertical-align:middle;}
+.tbl tr:last-child td{border-bottom:none;}.tbl tr:hover td{background:rgba(255,255,255,.02);}
+.modal-ov{display:none;position:absolute;inset:0;background:rgba(0,0,0,.7);z-index:200;align-items:center;justify-content:center;padding:20px;}
+.modal-ov.open{display:flex;}.modal{background:var(--bg3);border-radius:18px;border:1px solid var(--br);padding:20px;width:100%;max-width:360px;}
+.notif-bar{position:absolute;top:0;left:0;right:0;background:rgba(239,68,68,.95);padding:12px 16px;z-index:100;display:none;border-radius:0 0 14px 14px;animation:ni .3s ease;}
+.notif-bar.show{display:flex;align-items:center;justify-content:space-between;}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:rgba(16,185,129,.95);color:white;padding:10px 20px;border-radius:24px;font-size:13px;font-family:'Tajawal',sans-serif;z-index:9999;opacity:0;transition:opacity .3s;white-space:nowrap;pointer-events:none;}
+.toast.show{opacity:1;}
+#app-root{width:100%;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);}
+.pframe{width:420px;height:860px;background:var(--bg);border-radius:28px;border:1px solid var(--brs);display:flex;flex-direction:column;overflow:hidden;position:relative;}
+.aframe{width:100%;height:100vh;background:var(--bg);display:flex;overflow:hidden;}
+.pc{flex:1;overflow-y:auto;padding:16px;}
+@media(max-width:480px){#app-root{align-items:flex-start;}.pframe{width:100%;height:100vh;border-radius:0;border:none;}}
+</style>
+</head>
+<body>
+<div id="app-root"></div>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+/* ═══════════════════════════════════════════
+   SUPABASE CONFIG
+═══════════════════════════════════════════ */
+const SB_URL = 'https://vlzdynppigovmvcugtkq.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsemR5bnBwaWdvdm12Y3VndGtxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MjAwODUsImV4cCI6MjA5NTM5NjA4NX0.EgP_alBw055bG62c0TysVyxzhkAfbB8GtBHd4tXOQFQ';
+const sb = createClient(SB_URL, SB_KEY);
+
+/* ═══════════════════════════════════════════
+   REALTIME CHANNELS
+═══════════════════════════════════════════ */
+let realtimeChannel = null;
+
+function subscribeRealtime() {
+  if(realtimeChannel) sb.removeChannel(realtimeChannel);
+  realtimeChannel = sb.channel('fazaa-live')
+    .on('postgres_changes', {event:'*', schema:'public', table:'requests'}, payload => {
+      console.log('RT requests:', payload);
+      onRequestChanged(payload);
+    })
+    .on('postgres_changes', {event:'UPDATE', schema:'public', table:'users'}, payload => {
+      console.log('RT users:', payload);
+      onUserChanged(payload);
+    })
+    .subscribe(status => console.log('Realtime:', status));
+}
+
+function onRequestChanged(payload) {
+  const req = payload.new || payload.old;
+  if(S.role === 'client' && _activeReqId === req.id) {
+    if(req.status === 'assigned' && req.driver_id) {
+      sbGetDriver(req.driver_id).then(driver => { if(driver) showDriverAccepted(driver); });
+    }
+    if(req.status === 'completed') { toast('✅ تمت الخدمة!'); _activeReqId = null; clPage('home'); }
+  }
+  if(S.role === 'driver') { updateDriverBadge(); showDriverNotifFromRT(req); }
+  if(S.role === 'admin') { if(ADMIN_PAGE==='dashboard') adminNav('dashboard'); if(ADMIN_PAGE==='requests') adminNav('requests'); }
+}
+
+function onUserChanged(payload) {
+  const u = payload.new;
+  if(S.role === 'admin') {
+    const dot = document.getElementById('adot_'+u.id);
+    if(dot && u.lat && u.lng) {
+      const [x,y] = ll2xy(u.lat, u.lng);
+      dot.style.left = x+'%'; dot.style.top = y+'%';
+      dot.className = 'ddot ' + (u.available ? 'av2' : 'bz');
+    }
+    updateAdminStats();
+    const pin = document.getElementById('drvpin');
+    if(pin && _activeReqId) {
+      sbGetRequest(_activeReqId).then(req => {
+        if(req && req.driver_id === u.id && u.lat && u.lng) {
+          const [x,y] = ll2xy(u.lat, u.lng);
+          pin.style.left = x+'%'; pin.style.top = y+'%';
+        }
+      });
+    }
+  }
+  if(S.role === 'client' && _activeReqId) {
+    const pin = document.getElementById('drvpin');
+    if(pin) {
+      sbGetRequest(_activeReqId).then(req => {
+        if(req && req.driver_id === u.id && u.lat && u.lng) {
+          const [x,y] = ll2xy(u.lat, u.lng);
+          pin.style.left = x+'%'; pin.style.top = y+'%';
+        }
+      });
+    }
+  }
+}
+
+/* ═══════════════════════════════════════════
+   SUPABASE DB HELPERS
+═══════════════════════════════════════════ */
+async function sbLogin(email, pass, role) {
+  const { data, error } = await sb.from('users').select('*').eq('email', email).eq('password', pass).eq('role', role).single();
+  if(error || !data) return null;
+  return data;
+}
+async function sbRegister(user) {
+  const { data, error } = await sb.from('users').insert(user).select().single();
+  if(error) throw error;
+  return data;
+}
+async function sbGetUser(id) {
+  const { data } = await sb.from('users').select('*').eq('id', id).single();
+  return data;
+}
+async function sbGetDriver(id) {
+  return sbGetUser(id);
+}
+async function sbGetDrivers() {
+  const { data } = await sb.from('users').select('*').eq('role','driver');
+  return data || [];
+}
+async function sbGetClients() {
+  const { data } = await sb.from('users').select('*').eq('role','client');
+  return data || [];
+}
+async function sbGetRequests() {
+  const { data } = await sb.from('requests').select('*').order('created_at',{ascending:false});
+  return data || [];
+}
+async function sbGetRequest(id) {
+  const { data } = await sb.from('requests').select('*').eq('id', id).single();
+  return data;
+}
+async function sbGetMyRequests(clientId) {
+  const { data } = await sb.from('requests').select('*').eq('client_id', clientId).order('created_at',{ascending:false});
+  return data || [];
+}
+async function sbGetPendingRequests() {
+  const { data } = await sb.from('requests').select('*').eq('status','pending').order('created_at',{ascending:false});
+  return data || [];
+}
+async function sbGetDriverTrips(driverId) {
+  const { data } = await sb.from('requests').select('*').eq('driver_id', driverId).order('created_at',{ascending:false});
+  return data || [];
+}
+async function sbCreateRequest(req) {
+  const { data, error } = await sb.from('requests').insert(req).select().single();
+  if(error) throw error;
+  return data;
+}
+async function sbUpdateRequest(id, patch) {
+  const { data } = await sb.from('requests').update(patch).eq('id', id).select().single();
+  return data;
+}
+async function sbUpdateUser(id, patch) {
+  const { data } = await sb.from('users').update(patch).eq('id', id).select().single();
+  return data;
+}
+async function sbDeleteUser(id) {
+  await sb.from('users').delete().eq('id', id);
+}
+
+/* ═══════════════════════════════════════════
+   SESSION
+═══════════════════════════════════════════ */
+let S = {user:null, role:null};
+let _activeReqId = null;
+let ORDER = {svc:null,icon:null,price:0,note:'',lat:null,lng:null,addr:'',pay:null,step:1};
+
+function saveSession() { try{ localStorage.setItem('fz_sess', JSON.stringify(S)); }catch(e){} }
+function loadSession() { try{ const s=JSON.parse(localStorage.getItem('fz_sess')); if(s?.user){S=s;return true;} }catch(e){} return false; }
+function logout() { S={user:null,role:null}; localStorage.removeItem('fz_sess'); if(realtimeChannel) sb.removeChannel(realtimeChannel); render(); }
+
+/* ═══════════════════════════════════════════
+   HELPERS
+═══════════════════════════════════════════ */
+let toastT = null;
+function toast(msg, dur=2500) {
+  const el=document.getElementById('toast'); el.textContent=msg; el.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'), dur);
+}
+
+function mapSVG(w,h) {
+  return `<svg class="msvg" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <line x1="0" y1="${h*.5}" x2="${w}" y2="${h*.5}" stroke="#4A90D9" stroke-width="4"/>
+    <line x1="0" y1="${h*.27}" x2="${w}" y2="${h*.73}" stroke="#4A90D9" stroke-width="2.5"/>
+    <line x1="${w*.5}" y1="0" x2="${w*.5}" y2="${h}" stroke="#4A90D9" stroke-width="2.5"/>
+    <line x1="0" y1="${h*.14}" x2="${w}" y2="${h*.14}" stroke="#4A90D9" stroke-width="1"/>
+    <line x1="0" y1="${h*.86}" x2="${w}" y2="${h*.86}" stroke="#4A90D9" stroke-width="1"/>
+    <line x1="${w*.25}" y1="0" x2="${w*.25}" y2="${h}" stroke="#4A90D9" stroke-width="1"/>
+    <line x1="${w*.75}" y1="0" x2="${w*.75}" y2="${h}" stroke="#4A90D9" stroke-width="1"/>
+    <rect x="${w*.12}" y="${h*.16}" width="${w*.13}" height="${h*.14}" rx="3" fill="#1C2333" opacity=".75"/>
+    <rect x="${w*.62}" y="${h*.54}" width="${w*.15}" height="${h*.15}" rx="3" fill="#1C2333" opacity=".75"/>
+    <rect x="${w*.36}" y="${h*.65}" width="${w*.11}" height="${h*.18}" rx="3" fill="#1C2333" opacity=".75"/>
+  </svg>`;
+}
+
+function ll2xy(lat, lng) {
+  const x = Math.min(88, Math.max(10, ((lng - 38.5) / 2) * 100));
+  const y = Math.min(88, Math.max(10, ((22 - lat) / 1.5) * 100));
+  return [x, y];
+}
+
+/* ═══════════════════════════════════════════
+   ROUTER
+═══════════════════════════════════════════ */
+function render() {
+  const root = document.getElementById('app-root');
+  root.innerHTML = '';
+  if(S.role==='admin') { renderAdmin(root); subscribeRealtime(); }
+  else if(S.role==='driver') { renderDriver(root); subscribeRealtime(); startDriverGPS(); }
+  else if(S.role==='client') { renderClient(root); subscribeRealtime(); }
+  else renderChoice(root);
+}
+
+/* ═══════════════════════════════════════════
+   CHOICE / LOGIN / REGISTER
+═══════════════════════════════════════════ */
+function renderChoice(root) {
+  root.innerHTML = `
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;width:100%;padding:20px;">
+    <div style="width:56px;height:56px;background:var(--or);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:12px;">🚗</div>
+    <div style="font-size:28px;font-weight:800;color:var(--or);margin-bottom:4px;">فزعة</div>
+    <div style="font-size:13px;color:var(--mu);margin-bottom:36px;">مساعدة على الطريق</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:560px;width:100%;">
+      ${[['client','👤','عميل','اطلب خدمة','rgba(59,130,246,.5)'],['driver','🚛','سائق','استقبل الطلبات','rgba(16,185,129,.5)'],['admin','🛡️','إدارة','لوحة التحكم','rgba(139,92,246,.5)']].map(([r,ic,t,s,c])=>`
+      <div onclick="showLogin('${r}')" style="background:var(--bg3);border:1px solid var(--br);border-radius:16px;padding:24px 14px;text-align:center;cursor:pointer;transition:all .2s;" onmouseover="this.style.borderColor='${c}'" onmouseout="this.style.borderColor='var(--br)'">
+        <div style="font-size:36px;margin-bottom:10px;">${ic}</div>
+        <div style="font-size:15px;font-weight:600;margin-bottom:4px;">${t}</div>
+        <div style="font-size:11px;color:var(--mu);">${s}</div>
+      </div>`).join('')}
+    </div>
+    <div style="margin-top:24px;background:var(--bg3);border-radius:12px;padding:12px 20px;font-size:12px;color:var(--mu);text-align:center;max-width:420px;">
+      <div style="font-weight:500;color:var(--tx);margin-bottom:5px;">بيانات التجربة</div>
+      admin@fazaa.sa / admin123 &nbsp;|&nbsp; driver1@fazaa.sa / driver1 &nbsp;|&nbsp; client@fazaa.sa / client1
+    </div>
+  </div>`;
+}
+
+window.showLogin = function(role) {
+  const root = document.getElementById('app-root');
+  const icons = {client:'👤',driver:'🚛',admin:'🛡️'};
+  const names = {client:'عميل',driver:'سائق',admin:'إدارة'};
+  root.innerHTML = `
+  <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;width:100%;padding:20px;">
+    <div style="background:var(--bg3);border:1px solid var(--br);border-radius:20px;padding:28px;width:100%;max-width:380px;" class="fi">
+      <div style="text-align:center;margin-bottom:24px;">
+        <div style="font-size:40px;margin-bottom:10px;">${icons[role]}</div>
+        <div style="font-size:18px;font-weight:700;">دخول ${names[role]}</div>
+      </div>
+      <div id="lerr" style="display:none;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);border-radius:8px;padding:10px;font-size:12px;color:#FCA5A5;margin-bottom:14px;"></div>
+      <div class="mb12"><div class="lbl">البريد الإلكتروني</div><input class="inp" id="lem" type="email" placeholder="example@email.com" style="direction:ltr;text-align:left;"></div>
+      <div class="mb16"><div class="lbl">كلمة المرور</div><input class="inp" id="lps" type="password" placeholder="••••••••" style="direction:ltr;text-align:left;" onkeypress="if(event.key==='Enter')doLogin('${role}')"></div>
+      <button class="btn bor2 bfw blg" id="loginbtn" onclick="doLogin('${role}')">دخول</button>
+      <div style="text-align:center;margin-top:14px;">
+        <span style="font-size:12px;color:var(--mu);">ليس لديك حساب؟ </span>
+        <span style="font-size:12px;color:var(--or);cursor:pointer;" onclick="showReg('${role}')">إنشاء حساب</span>
+      </div>
+      <div style="text-align:center;margin-top:12px;"><span style="font-size:12px;color:var(--mu);cursor:pointer;" onclick="renderChoice(document.getElementById('app-root'))">← رجوع</span></div>
+    </div>
+  </div>`;
+  setTimeout(()=>document.getElementById('lem')?.focus(),100);
+};
+
+window.doLogin = async function(role) {
+  const email = document.getElementById('lem').value.trim();
+  const pass = document.getElementById('lps').value;
+  const btn = document.getElementById('loginbtn');
+  btn.textContent = 'جارٍ الدخول...'; btn.disabled = true;
+  const user = await sbLogin(email, pass, role);
+  if(!user) {
+    btn.textContent = 'دخول'; btn.disabled = false;
+    const e=document.getElementById('lerr'); e.style.display='block'; e.textContent='البريد أو كلمة المرور غير صحيحة';
+    return;
+  }
+  S = {user, role}; saveSession(); render();
+};
+
+window.showReg = function(role) {
+  const root = document.getElementById('app-root');
+  const names = {client:'عميل',driver:'سائق',admin:'مشرف'};
+  root.innerHTML = `
+  <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;width:100%;padding:20px;overflow-y:auto;">
+    <div style="background:var(--bg3);border:1px solid var(--br);border-radius:20px;padding:28px;width:100%;max-width:380px;" class="fi">
+      <div style="font-size:18px;font-weight:700;margin-bottom:20px;text-align:center;">إنشاء حساب ${names[role]}</div>
+      <div id="rerr" style="display:none;background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.3);border-radius:8px;padding:10px;font-size:12px;color:#FCA5A5;margin-bottom:12px;"></div>
+      <div class="mb10"><div class="lbl">الاسم الكامل</div><input class="inp" id="rn" placeholder="محمد العتيبي"></div>
+      <div class="mb10"><div class="lbl">البريد الإلكتروني</div><input class="inp" id="re" type="email" style="direction:ltr;text-align:left;"></div>
+      <div class="mb10"><div class="lbl">رقم الجوال</div><input class="inp" id="rph" placeholder="05xxxxxxxx"></div>
+      ${role==='driver'?`<div class="mb10"><div class="lbl">نوع الخدمة</div><select class="inp" id="rsv"><option>سطحة</option><option>إطارات</option><option>بطارية</option><option>وقود</option><option>ميكانيك</option><option>قفل السيارة</option></select></div><div class="mb10"><div class="lbl">رقم اللوحة</div><input class="inp" id="rpl" placeholder="أ ب ج ١٢٣٤"></div>`:''}
+      <div class="mb10"><div class="lbl">كلمة المرور</div><input class="inp" id="rp1" type="password" style="direction:ltr;text-align:left;"></div>
+      <div style="margin-bottom:18px;"><div class="lbl">تأكيد كلمة المرور</div><input class="inp" id="rp2" type="password" style="direction:ltr;text-align:left;"></div>
+      <button class="btn bor2 bfw" id="regbtn" onclick="doReg('${role}')">إنشاء الحساب</button>
+      <div style="text-align:center;margin-top:12px;"><span style="font-size:12px;color:var(--mu);cursor:pointer;" onclick="showLogin('${role}')">← لديك حساب؟ دخول</span></div>
+    </div>
+  </div>`;
+};
+
+window.doReg = async function(role) {
+  const name=document.getElementById('rn').value.trim();
+  const email=document.getElementById('re').value.trim();
+  const phone=document.getElementById('rph').value.trim();
+  const p1=document.getElementById('rp1').value;
+  const p2=document.getElementById('rp2').value;
+  const err=document.getElementById('rerr');
+  if(!name||!email||!p1){err.style.display='block';err.textContent='يرجى تعبئة جميع الحقول';return;}
+  if(p1!==p2){err.style.display='block';err.textContent='كلمة المرور غير متطابقة';return;}
+  const btn=document.getElementById('regbtn'); btn.textContent='جارٍ الإنشاء...'; btn.disabled=true;
+  try {
+    const u={name,email,phone,role,password:p1,rating:5.0,trips:0,available:true,lat:21.4858,lng:39.1925};
+    if(role==='driver'){u.svc=document.getElementById('rsv')?.value||'سطحة';u.plate=document.getElementById('rpl')?.value||'';}
+    const user = await sbRegister(u);
+    S={user,role}; saveSession(); render();
+  } catch(e) {
+    btn.textContent='إنشاء الحساب'; btn.disabled=false;
+    err.style.display='block'; err.textContent='البريد مسجل مسبقاً أو حدث خطأ';
+  }
+};
+
+/* ═══════════════════════════════════════════
+   CLIENT APP
+═══════════════════════════════════════════ */
+let CL_PAGE='home';
+
+function renderClient(root) {
+  root.innerHTML=`<div class="pframe" id="pframe"><div id="cinner" style="display:flex;flex-direction:column;height:100%;overflow:hidden;position:relative;"></div></div>`;
+  clPage('home');
+}
+
+window.clPage = function(pg) {
+  CL_PAGE=pg;
+  const inner=document.getElementById('cinner');
+  if(!inner) return;
+  inner.innerHTML='';
+  const u=S.user;
+  const tb=document.createElement('div'); tb.className='topbar';
+  tb.innerHTML=`
+    <div class="f ac g12">
+      <div style="width:34px;height:34px;background:var(--or);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;">🚗</div>
+      <div><div style="font-size:15px;font-weight:700;color:var(--or);">فزعة</div><div class="f11 tmu">${pg==='home'?'مرحباً، '+u.name:pg==='order'?'طلب جديد':pg==='myorders'?'طلباتي':'حسابي'}</div></div>
+    </div>
+    <div class="f ac g8">
+      ${pg!=='home'?`<button class="btn bgh bsm" onclick="clPage('home')"><i class="ti ti-arrow-right"></i></button>`:`<div class="av av36 avor" style="cursor:pointer;" onclick="clPage('profile')">${u.name[0]}</div>`}
+    </div>`;
+  inner.appendChild(tb);
+  if(_activeReqId && pg!=='order') {
+    sbGetRequest(_activeReqId).then(req=>{
+      if(req&&req.status!=='completed'&&req.status!=='cancelled'){
+        const nb=document.createElement('div');
+        nb.style.cssText='background:rgba(232,80,10,.12);border-bottom:1px solid rgba(232,80,10,.25);padding:9px 16px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;';
+        nb.innerHTML=`<span class="f12"><span class="pdot on"></span> طلبك نشط — ${req.svc}</span><button class="btn bor2 bsm" onclick="clPage('order')">تتبع</button>`;
+        inner.insertBefore(nb, inner.children[1]||null);
+      }
+    });
+  }
+  const pc=document.createElement('div'); pc.className='pc'; pc.style.flex='1'; pc.style.overflowY='auto';
+  inner.appendChild(pc);
+  if(pg==='home') buildClHome(pc);
+  else if(pg==='myorders') buildClOrders(pc);
+  else if(pg==='profile') buildClProfile(pc);
+  else if(pg==='order') buildClOrder(pc);
+  const bb=document.createElement('div'); bb.className='btmbar';
+  bb.innerHTML=`
+    <button class="bnav ${pg==='home'?'on':''}" onclick="clPage('home')"><i class="ti ti-home"></i>الرئيسية</button>
+    <button class="bnav ${pg==='order'?'on':''}" onclick="startOrder()"><i class="ti ti-plus"></i>طلب</button>
+    <button class="bnav ${pg==='myorders'?'on':''}" onclick="clPage('myorders')"><i class="ti ti-list"></i>طلباتي</button>
+    <button class="bnav ${pg==='profile'?'on':''}" onclick="clPage('profile')"><i class="ti ti-user"></i>حسابي</button>`;
+  inner.appendChild(bb);
+};
+
+function buildClHome(pc) {
+  pc.innerHTML=`
+  <div class="card cor mb16 fi">
+    <div class="f16 w7 mb4">أنت في موقف طارئ؟</div>
+    <div class="f12 tmu mb16">اطلب المساعدة خلال ثوانٍ وسيصلك أقرب فريق</div>
+    <button class="btn bor2 bfw blg" onclick="startOrder()">🚨 اطلب مساعدة الآن</button>
+  </div>
+  <div class="slbl">الخدمات المتاحة</div>
+  <div class="scg">
+    ${[['إطار مثقوب','🔧',60],['بطارية فارغة','🪫',80],['سطحة / نقل','🚛',150],['وقود','⛽',35],['ميكانيك','⚙️',100],['قفل السيارة','🔑',70]].map(([n,i,p])=>`
+    <div class="sc" onclick="qSvc('${n}','${i}',${p})">
+      <div style="font-size:26px;margin-bottom:6px;">${i}</div>
+      <div class="f12 w5">${n}</div>
+      <div class="f11 tmu">من ${p} ر</div>
+    </div>`).join('')}
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;">
+    <div class="stcard"><div class="stnum tor" id="avail-cnt">...</div><div class="stlbl">سائق متاح</div></div>
+    <div class="stcard"><div class="stnum tam">4.2د</div><div class="stlbl">متوسط الوصول</div></div>
+  </div>`;
+  sbGetDrivers().then(drivers=>{
+    const el=document.getElementById('avail-cnt');
+    if(el) el.textContent=drivers.filter(d=>d.available).length+'+';
+  });
+}
+
+window.startOrder = function() {
+  ORDER={svc:null,icon:null,price:0,note:'',lat:null,lng:null,addr:'',pay:null,step:1};
+  clPage('order');
+};
+window.qSvc = function(n,i,p) {
+  ORDER={svc:n,icon:i,price:p,note:'',lat:null,lng:null,addr:'',pay:null,step:1};
+  clPage('order');
+};
+
+function buildClOrder(pc) {
+  pc.innerHTML=`<div class="sbar">${[1,2,3,4].map(i=>`<div class="sbi ${i<=ORDER.step?'dn':''}" id="sbi${i}"></div>`).join('')}</div><div id="ostep"></div>`;
+  renderStep(ORDER.step);
+}
+
+window.renderStep = function(n) {
+  ORDER.step=n;
+  for(let i=1;i<=4;i++){const b=document.getElementById('sbi'+i);if(b)b.className='sbi'+(i<=n?' dn':'');}
+  const c=document.getElementById('ostep'); if(!c) return;
+  c.innerHTML=''; c.className='fi';
+  if(n===1) {
+    c.innerHTML=`
+    <div class="f16 w7 mb4">اختر الخدمة</div>
+    <div class="f12 tmu mb14">ما المشكلة التي تواجهها؟</div>
+    <div class="scg">
+      ${[['إطار مثقوب','🔧',60],['بطارية فارغة','🪫',80],['سطحة / نقل','🚛',150],['وقود','⛽',35],['ميكانيك','⚙️',100],['قفل السيارة','🔑',70]].map(([n,i,p])=>`
+      <div class="sc ${ORDER.svc===n?'sl':''}" onclick="selSvc('${n}','${i}',${p},this)">
+        <div style="font-size:26px;margin-bottom:6px;">${i}</div>
+        <div class="f12 w5">${n}</div>
+        <div class="f11 tmu">من ${p} ر</div>
+      </div>`).join('')}
+    </div>
+    <div class="mb12">
+      <div class="lbl">وصف المشكلة <span style="color:var(--re);">*</span></div>
+      <textarea class="inp" id="snote" rows="2" placeholder="مطلوب — اكتب وصفاً للمشكلة..." style="resize:none;">${ORDER.note}</textarea>
+      <div id="nerr" style="display:none;color:#FCA5A5;font-size:11px;margin-top:5px;"><i class="ti ti-alert-circle"></i> يرجى كتابة وصف للمشكلة</div>
+    </div>
+    <button class="btn bor2 bfw" id="n1btn" onclick="step2()" style="${!ORDER.svc?'opacity:.4;pointer-events:none;':''}">التالي — تحديد موقعي ←</button>`;
+  }
+  else if(n===2) {
+    c.innerHTML=`
+    <div class="f16 w7 mb4">موقعك الحالي</div>
+    <div class="f12 tmu mb14">سيُرسَل للسائق ليتوجه إليك مباشرة عبر Google Maps</div>
+    <div class="mbox mb14" style="height:220px;" id="cmap">
+      ${mapSVG(400,220)}
+      <div class="mpin" id="cpin" style="top:50%;left:50%;"><div class="mpd or"></div><div class="mpl or">أنا هنا</div></div>
+      <div style="position:absolute;bottom:8px;left:10px;right:10px;display:flex;gap:6px;">
+        <div style="flex:1;background:rgba(0,0,0,.75);border-radius:8px;padding:7px 10px;font-size:11px;color:var(--mu);"><i class="ti ti-map-pin"></i> <span id="ltxt">${ORDER.addr||'اضغط GPS لتحديد موقعك'}</span></div>
+        <button onclick="getGPS()" style="background:var(--or);color:white;border:none;padding:7px 12px;border-radius:8px;font-size:11px;cursor:pointer;font-family:'Tajawal',sans-serif;white-space:nowrap;"><i class="ti ti-current-location"></i> GPS</button>
+      </div>
+    </div>
+    <div class="card mb14">
+      <div class="lbl">أو اكتب العنوان يدوياً</div>
+      <input class="inp mb8" id="ainp" placeholder="طريق مكة–جدة، كم 47" value="${ORDER.addr||''}">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div><div class="lbl">خط العرض</div><input class="inp" id="latin" value="${ORDER.lat||''}" placeholder="21.4858" readonly></div>
+        <div><div class="lbl">خط الطول</div><input class="inp" id="lngin" value="${ORDER.lng||''}" placeholder="39.1925" readonly></div>
+      </div>
+    </div>
+    <div id="nrby" style="display:${ORDER.lat?'block':'none'};background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:12px;color:#6EE7B7;">
+      <i class="ti ti-check"></i> تم تحديد موقعك
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <button class="btn bdk" onclick="renderStep(1)">← رجوع</button>
+      <button class="btn bor2" id="n2btn" onclick="renderStep(3)" style="${!ORDER.lat?'opacity:.4;pointer-events:none;':''}">التالي — الدفع ←</button>
+    </div>`;
+    document.getElementById('ainp').addEventListener('input',function(){
+      if(this.value.length>3){ORDER.addr=this.value;ORDER.lat=ORDER.lat||21.4858;ORDER.lng=ORDER.lng||39.1925;setLocOK();}
+    });
+  }
+  else if(n===3) {
+    c.innerHTML=`
+    <div class="f16 w7 mb4">طريقة الدفع</div>
+    <div class="card mb14">
+      <div class="slbl">ملخص الطلب</div>
+      <div class="f jb mb8"><span class="f13 tmu">الخدمة</span><span class="f13 w5">${ORDER.icon} ${ORDER.svc}</span></div>
+      <div class="f jb mb8"><span class="f13 tmu">الموقع</span><span class="f12" style="max-width:60%;text-align:left;">${ORDER.addr||'—'}</span></div>
+      <div class="f jb" style="border-top:1px solid var(--br);padding-top:10px;"><span class="f13 w7">المبلغ المتوقع</span><span class="f18 w7 tor">${ORDER.price} ريال</span></div>
+    </div>
+    <div class="popt ${ORDER.pay==='cash'?'sl':''}" id="pcash" onclick="selPay('cash')">
+      <div class="f ac g12"><div style="width:40px;height:40px;background:rgba(16,185,129,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;">💵</div>
+      <div style="flex:1;"><div class="f14 w5">كاش</div><div class="f11 tmu">ادفع للسائق عند الوصول</div></div>
+      <div class="pchk" id="ckc">${ORDER.pay==='cash'?'<i class="ti ti-check" style="font-size:12px;color:var(--or);"></i>':''}</div></div>
+    </div>
+    <div class="popt ${ORDER.pay==='online'?'sl':''}" id="ponl" onclick="selPay('online')">
+      <div class="f ac g12"><div style="width:40px;height:40px;background:rgba(59,130,246,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;">💳</div>
+      <div style="flex:1;"><div class="f14 w5">دفع إلكتروني</div><div class="f11 tmu">Mada ● Visa ● Apple Pay</div></div>
+      <div class="pchk" id="cko">${ORDER.pay==='online'?'<i class="ti ti-check" style="font-size:12px;color:var(--or);"></i>':''}</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px;">
+      <button class="btn bdk" onclick="renderStep(2)">← رجوع</button>
+      <button class="btn bor2" id="n3btn" onclick="submitOrder()" style="${!ORDER.pay?'opacity:.4;pointer-events:none;':''}">تأكيد الطلب</button>
+    </div>`;
+  }
+  else if(n===4) {
+    const sid=_activeReqId?_activeReqId.slice(-6).toUpperCase():'------';
+    c.innerHTML=`
+    <div class="tc" style="padding:20px 0;">
+      <div style="font-size:40px;margin-bottom:10px;">✅</div>
+      <div class="f18 w7 mb4">تم إرسال طلبك!</div>
+      <div class="f12 tmu">رقم الطلب: <span class="tor w7">#FZ-${sid}</span></div>
+    </div>
+    <div class="card mb12">
+      <div id="sstate" class="tc" style="padding:14px 0;">
+        <div class="spin mb12"></div>
+        <div class="f13 mb4">جارٍ البحث عن أقرب سائق...</div>
+        <div class="f11 tmu" id="stxt">يتم فحص الفرق المتاحة</div>
+      </div>
+      <div id="dstate" style="display:none;">
+        <div class="slbl mb10" style="color:var(--gr);">✅ قبل السائق — في الطريق إليك</div>
+        <div id="dinforow" class="f jb ac mb12"></div>
+        <div class="pbar mb10"><div class="pfill" id="etafill" style="width:5%;"></div></div>
+        <div class="mbox mb12" style="height:180px;" id="drvmap">
+          ${mapSVG(400,180)}
+          <div class="mpin" id="drvpin" style="top:28%;left:70%;"><div class="mpd gr"></div><div class="mpl gr" id="dpname">السائق</div></div>
+          <div class="mpin" id="mypin_track" style="top:60%;left:44%;">
+            <div class="mpd or"></div><div class="mpl or">أنا هنا</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <button class="btn bdk bsm" id="callbtn"><i class="ti ti-phone"></i> اتصال</button>
+          <button class="btn bbl2 bsm" onclick="openNav()"><i class="ti ti-navigation"></i> تتبع</button>
+        </div>
+      </div>
+    </div>
+    <div class="card mb12">
+      <div class="slbl">تفاصيل الطلب</div>
+      <div class="f jb mb8"><span class="f12 tmu">الخدمة</span><span class="f13 w5">${ORDER.icon} ${ORDER.svc}</span></div>
+      <div class="f jb mb8"><span class="f12 tmu">الموقع</span><span class="f12" style="max-width:55%;text-align:left;">${ORDER.addr}</span></div>
+      <div class="f jb mb8"><span class="f12 tmu">الدفع</span><span class="f12">${ORDER.pay==='cash'?'💵 كاش':'💳 إلكتروني'}</span></div>
+      <div class="f jb"><span class="f12 tmu">المبلغ</span><span class="f14 w7 tor">${ORDER.price} ريال</span></div>
+    </div>
+    <button class="btn bdk bfw" id="cancelbtn" onclick="cancelOrder()">إلغاء الطلب</button>`;
+    animSearch();
+    if(ORDER.lat && ORDER.lng) {
+      const mypin=document.getElementById('mypin_track');
+      if(mypin){const [x,y]=ll2xy(ORDER.lat,ORDER.lng,400,180);mypin.style.left=x+'%';mypin.style.top=y+'%';}
+    }
+  }
+};
+
+window.selSvc = function(name,icon,price,el) {
+  ORDER.svc=name; ORDER.icon=icon; ORDER.price=price;
+  document.querySelectorAll('.sc').forEach(c=>c.classList.remove('sl'));
+  el.classList.add('sl');
+  const b=document.getElementById('n1btn'); if(b){b.style.opacity='1';b.style.pointerEvents='auto';}
+};
+
+window.step2 = function() {
+  const noteEl=document.getElementById('snote');
+  const note=noteEl?noteEl.value.trim():'';
+  if(!ORDER.svc){toast('يرجى اختيار الخدمة أولاً');return;}
+  if(!note){if(noteEl){noteEl.style.borderColor='rgba(239,68,68,.6)';noteEl.focus();}const err=document.getElementById('nerr');if(err)err.style.display='block';return;}
+  ORDER.note=note; renderStep(2);
+};
+
+window.getGPS = function() {
+  const lbl=document.getElementById('ltxt'); if(lbl)lbl.textContent='جارٍ التحديد...';
+  if(!navigator.geolocation){useDefLoc();return;}
+  navigator.geolocation.getCurrentPosition(p=>{
+    ORDER.lat=p.coords.latitude; ORDER.lng=p.coords.longitude;
+    ORDER.addr=ORDER.lat.toFixed(4)+'، '+ORDER.lng.toFixed(4);
+    const li=document.getElementById('latin');if(li)li.value=ORDER.lat.toFixed(5);
+    const gi=document.getElementById('lngin');if(gi)gi.value=ORDER.lng.toFixed(5);
+    if(lbl)lbl.textContent=ORDER.addr;
+    const pin=document.getElementById('cpin');
+    if(pin){const [x,y]=ll2xy(ORDER.lat,ORDER.lng,400,220);pin.style.left=x+'%';pin.style.top=y+'%';}
+    setLocOK();
+  }, ()=>useDefLoc());
+};
+function useDefLoc() {
+  ORDER.lat=21.4858; ORDER.lng=39.1925; ORDER.addr='طريق مكة–جدة، كم 47';
+  const li=document.getElementById('latin');if(li)li.value='21.48580';
+  const gi=document.getElementById('lngin');if(gi)gi.value='39.19250';
+  const lbl=document.getElementById('ltxt');if(lbl)lbl.textContent=ORDER.addr;
+  setLocOK();
+}
+function setLocOK() {
+  const nb=document.getElementById('nrby');if(nb)nb.style.display='block';
+  const b=document.getElementById('n2btn');if(b){b.style.opacity='1';b.style.pointerEvents='auto';}
+}
+
+window.selPay = function(t) {
+  ORDER.pay=t;
+  document.getElementById('pcash')?.classList.toggle('sl',t==='cash');
+  document.getElementById('ponl')?.classList.toggle('sl',t==='online');
+  const cc=document.getElementById('ckc'),co=document.getElementById('cko');
+  if(cc)cc.innerHTML=t==='cash'?'<i class="ti ti-check" style="font-size:12px;color:var(--or);"></i>':'';
+  if(co)co.innerHTML=t==='online'?'<i class="ti ti-check" style="font-size:12px;color:var(--or);"></i>':'';
+  const b=document.getElementById('n3btn');if(b){b.style.opacity='1';b.style.pointerEvents='auto';}
+};
+
+window.submitOrder = async function() {
+  const btn=document.getElementById('n3btn'); if(btn){btn.textContent='جارٍ الإرسال...';btn.disabled=true;}
+  try {
+    const req = await sbCreateRequest({
+      client_id:S.user.id, client_name:S.user.name,
+      svc:ORDER.svc, icon:ORDER.icon||'🔧', price:ORDER.price,
+      note:ORDER.note, addr:ORDER.addr, lat:ORDER.lat, lng:ORDER.lng,
+      pay:ORDER.pay, status:'pending'
+    });
+    _activeReqId=req.id; ORDER.step=4; clPage('order');
+  } catch(e) { toast('حدث خطأ، حاول مرة أخرى'); if(btn){btn.textContent='تأكيد الطلب';btn.disabled=false;} }
+};
+
+window.cancelOrder = async function() {
+  if(_activeReqId){await sbUpdateRequest(_activeReqId,{status:'cancelled'});}
+  _activeReqId=null; clPage('home');
+};
+window.openNav = function() {
+  if(ORDER.lat&&ORDER.lng)window.open(`https://www.google.com/maps/dir/?api=1&destination=${ORDER.lat},${ORDER.lng}&travelmode=driving`,'_blank');
+};
+
+function animSearch() {
+  let c=320;
+  const iv=setInterval(()=>{
+    c=Math.max(1,c-Math.floor(Math.random()*28+12));
+    const e=document.getElementById('stxt');if(e)e.textContent='يتم فحص '+c+' فريق متاح';
+    if(c<=5)clearInterval(iv);
+  },200);
+}
+
+function showDriverAccepted(driver) {
+  const ss=document.getElementById('sstate'),ds=document.getElementById('dstate'),cb=document.getElementById('cancelbtn');
+  if(ss)ss.style.display='none';
+  if(!ds)return;
+  ds.style.display='block';
+  const row=document.getElementById('dinforow');
+  if(row)row.innerHTML=`
+    <div class="f ac g12"><div class="av av44 avgr">${driver.name.slice(0,2)}</div>
+    <div><div class="f14 w5">${driver.name}</div><div class="f11 tmu">⭐ ${driver.rating||4.9} · ${driver.trips||0} رحلة · ${driver.svc||''}</div><div class="f11 tmu">${driver.phone||''}</div></div></div>
+    <div class="tc"><div class="f22 w7 tor" id="etanum">8</div><div class="f11 tmu">دقيقة</div></div>`;
+  const dpn=document.getElementById('dpname');if(dpn)dpn.textContent=driver.name.split(' ').slice(0,2).join(' ');
+  const cb2=document.getElementById('callbtn');if(cb2)cb2.onclick=()=>toast('📞 جارٍ الاتصال بـ '+driver.name+'...');
+  if(cb)cb.style.display='none';
+  if(driver.lat&&driver.lng){const pin=document.getElementById('drvpin');if(pin){const [x,y]=ll2xy(driver.lat,driver.lng,400,180);pin.style.left=x+'%';pin.style.top=y+'%';}}
+  startEta();
+}
+
+function startEta() {
+  let eta=8,pct=5;
+  const iv=setInterval(()=>{
+    eta=Math.max(0,eta-1);pct=Math.min(100,pct+12);
+    const e=document.getElementById('etanum'),f=document.getElementById('etafill');
+    if(e)e.textContent=eta===0?'وصل!':eta;if(f)f.style.width=pct+'%';
+    if(eta===0)clearInterval(iv);
+  },4000);
+}
+
+function buildClOrders(pc) {
+  pc.innerHTML=`<div class="slbl">طلباتي</div><div class="spin" style="margin-top:30px;"></div>`;
+  sbGetMyRequests(S.user.id).then(reqs=>{
+    pc.innerHTML=`<div class="slbl">طلباتي</div>`;
+    if(!reqs.length){pc.innerHTML+=`<div class="tc" style="padding:40px;color:var(--mu);"><i class="ti ti-list" style="font-size:40px;display:block;margin-bottom:12px;"></i><div class="f14">لا توجد طلبات</div></div>`;return;}
+    const sm={pending:{c:'bam',t:'انتظار'},assigned:{c:'bbl',t:'في الطريق'},completed:{c:'bgr',t:'مكتمل'},cancelled:{c:'bre',t:'ملغي'}};
+    reqs.forEach(r=>{
+      const s=sm[r.status]||sm.pending;
+      const d=document.createElement('div');d.className='card fi';
+      d.innerHTML=`<div class="f jb ac mb8"><div class="f ac g12"><div class="av av36" style="background:rgba(232,80,10,.12);color:var(--or);font-size:18px;">${r.icon||'🔧'}</div><div><div class="f13 w5">${r.svc}</div><div class="f11 tmu">${r.addr||''}</div></div></div><span class="badge ${s.c}">${s.t}</span></div><div class="f jb"><span class="f12 tmu">${r.pay==='cash'?'💵 كاش':'💳 إلكتروني'}</span><span class="f13 w5 tgr">${r.price} ريال</span></div>`;
+      pc.appendChild(d);
+    });
+  });
+}
+
+function buildClProfile(pc) {
+  const u=S.user;
+  pc.innerHTML=`
+  <div class="card tc mb16 fi" style="padding:24px;">
+    <div class="av av60 avor" style="margin:0 auto 14px;">${u.name[0]}</div>
+    <div class="f18 w7 mb4">${u.name}</div>
+    <div class="f12 tmu mb16">${u.email}</div>
+  </div>
+  <div class="slbl">تعديل البيانات الشخصية</div>
+  <div class="card mb14">
+    <div class="mb10"><div class="lbl">الاسم</div><input class="inp" id="pn" value="${u.name}"></div>
+    <div class="mb10"><div class="lbl">الجوال</div><input class="inp" id="pp" value="${u.phone||''}"></div>
+    <div class="mb14"><div class="lbl">كلمة مرور جديدة (اختياري)</div><input class="inp" id="pw" type="password" style="direction:ltr;text-align:left;"></div>
+    <button class="btn bor2 bfw" onclick="saveCl()">حفظ التغييرات</button>
+  </div>
+  <button class="btn bgh bfw" onclick="logout()"><i class="ti ti-logout"></i> تسجيل الخروج</button>`;
+}
+window.saveCl = async function(){
+  const p={name:document.getElementById('pn').value.trim(),phone:document.getElementById('pp').value.trim()};
+  const pw=document.getElementById('pw').value;if(pw)p.password=pw;
+  await sbUpdateUser(S.user.id,p);S.user={...S.user,...p};saveSession();toast('تم الحفظ ✓');
+};
+
+/* ═══════════════════════════════════════════
+   DRIVER APP
+═══════════════════════════════════════════ */
+let DR_PAGE='home';
+let gpsInterval=null;
+
+function startDriverGPS() {
+  clearInterval(gpsInterval);
+  gpsInterval=setInterval(async ()=>{
+    if(S.role!=='driver'||!S.user)return;
+    const update=(lat,lng)=>{
+      sbUpdateUser(S.user.id,{lat,lng});
+      S.user.lat=lat;S.user.lng=lng;
+      const pin=document.getElementById('dmypin');
+      if(pin){const [x,y]=ll2xy(lat,lng,400,200);pin.style.left=x+'%';pin.style.top=y+'%';}
+      const lbl=document.getElementById('dgpslbl');if(lbl)lbl.textContent=lat.toFixed(4)+'، '+lng.toFixed(4);
+    };
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(p=>update(p.coords.latitude,p.coords.longitude),()=>{
+        const activeReq=null;
+        let lat=S.user.lat||21.488,lng=S.user.lng||39.193;
+        lat+=(Math.random()-.5)*.002;lng+=(Math.random()-.5)*.002;
+        update(lat,lng);
+      });
+    }
+  },5000);
+}
+
+function renderDriver(root) {
+  root.innerHTML=`<div class="pframe" id="pframe"><div id="dinner" style="display:flex;flex-direction:column;height:100%;overflow:hidden;position:relative;"></div></div>`;
+  drPage('home');
+}
+
+function updateDriverBadge() { if(DR_PAGE) drPage(DR_PAGE); }
+function showDriverNotifFromRT(req) {
+  if(S.role!=='driver'||!S.user.available||req.status!=='pending') return;
+  const inner=document.getElementById('dinner');if(!inner)return;
+  let nb=document.getElementById('dnotif2');
+  if(!nb){nb=document.createElement('div');nb.id='dnotif2';nb.className='notif-bar show';inner.insertBefore(nb,inner.children[1]||null);}
+  nb.innerHTML=`<span class="f12">🔔 طلب جديد — ${req.svc}</span><button class="btn bsm" style="background:white;color:var(--re);padding:6px 12px;" onclick="drPage('requests')">عرض</button>`;
+  nb.style.display='flex';setTimeout(()=>{if(nb.parentNode)nb.style.display='none';},6000);
+}
+
+window.drPage = function(pg) {
+  DR_PAGE=pg;
+  const inner=document.getElementById('dinner');if(!inner)return;
+  inner.innerHTML='';
+  const u=S.user;
+  const tb=document.createElement('div');tb.className='topbar';
+  tb.innerHTML=`
+  <div class="f ac g12">
+    <div style="width:34px;height:34px;background:var(--gr);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;">🚛</div>
+    <div><div style="font-size:15px;font-weight:700;">فزعة — سائق</div><div class="f11 tmu">${u.name}</div></div>
+  </div>
+  <div class="f ac g12">
+    <span class="pdot ${u.available?'on':'of'}" id="dsdot"></span>
+    <span class="f12" id="dstxt" style="color:${u.available?'var(--gr)':'var(--mu)'}">${u.available?'متاح':'غير متاح'}</span>
+    <label class="tgl" onclick="toggleAvail()"><input type="checkbox" id="avchk" ${u.available?'checked':''}><div class="tgl-t"></div><div class="tgl-h"></div></label>
+  </div>`;
+  inner.appendChild(tb);
+  const pc=document.createElement('div');pc.className='pc';pc.style.flex='1';pc.style.overflowY='auto';
+  inner.appendChild(pc);
+  sbGetPendingRequests().then(pending=>{
+    if(pending.length&&u.available){
+      const nb=document.createElement('div');nb.id='dnotif';nb.className='notif-bar show';
+      nb.innerHTML=`<span class="f12">🔔 ${pending.length} طلب جديد قريب!</span><button class="btn bsm" style="background:white;color:var(--re);padding:6px 12px;" onclick="drPage('requests')">عرض</button>`;
+      inner.insertBefore(nb,inner.children[1]);
+      setTimeout(()=>{if(nb.parentNode)nb.style.display='none';},5000);
+    }
+    if(pg==='home')buildDrHome(pc);
+    else if(pg==='requests')buildDrRequests(pc,pending);
+    else if(pg==='trips')buildDrTrips(pc);
+    else if(pg==='profile')buildDrProfile(pc);
+    const bb=document.createElement('div');bb.className='btmbar';
+    const pbadge=pending.length&&u.available?`<span class="nbadge">${pending.length}</span>`:'';
+    bb.innerHTML=`
+      <button class="bnav ${pg==='home'?'on':''}" onclick="drPage('home')"><i class="ti ti-steering-wheel"></i>لوحتي</button>
+      <button class="bnav ${pg==='requests'?'on':''}" onclick="drPage('requests')" style="position:relative;"><i class="ti ti-bell"></i>الطلبات${pbadge}</button>
+      <button class="bnav ${pg==='trips'?'on':''}" onclick="drPage('trips')"><i class="ti ti-list"></i>رحلاتي</button>
+      <button class="bnav ${pg==='profile'?'on':''}" onclick="drPage('profile')"><i class="ti ti-user"></i>حسابي</button>`;
+    inner.appendChild(bb);
+  });
+};
+
+function buildDrHome(pc) {
+  const u=S.user;
+  sbGetDriverTrips(u.id).then(trips=>{
+    const today=trips.filter(r=>r.status==='completed'&&r.created_at&&new Date(r.created_at).toDateString()===new Date().toDateString());
+    const earn=today.reduce((s,r)=>s+r.price,0);
+    sbGetRequest(u.current_req_id||'none').then(active=>{
+      pc.innerHTML=`
+      <div class="slbl">موقعي الحالي</div>
+      <div class="mbox mb14" style="height:200px;">
+        ${mapSVG(400,200)}
+        <div class="mpin" id="dmypin" style="top:50%;left:50%;"><div class="mpd bl"></div><div class="mpl bl">أنا هنا</div></div>
+        <div style="position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.75);border-radius:8px;padding:5px 10px;font-size:11px;color:var(--mu);">
+          <i class="ti ti-map-pin"></i> <span id="dgpslbl">${u.lat?u.lat.toFixed(4)+'، '+u.lng.toFixed(4):'جارٍ التحديد...'}</span>
+        </div>
+        <button onclick="getDrGPS()" style="position:absolute;top:8px;left:10px;background:rgba(0,0,0,.75);color:white;border:1px solid var(--br);padding:5px 10px;border-radius:7px;font-size:11px;cursor:pointer;font-family:'Tajawal',sans-serif;"><i class="ti ti-current-location"></i> GPS</button>
+      </div>
+      <div class="slbl">إحصائياتي اليوم</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px;">
+        <div class="stcard"><div class="stnum tgr">${today.length}</div><div class="stlbl">رحلة</div></div>
+        <div class="stcard"><div class="stnum tam">${earn}</div><div class="stlbl">ريال</div></div>
+        <div class="stcard"><div class="stnum tbl">${u.rating||4.9}</div><div class="stlbl">تقييم</div></div>
+      </div>`;
+      if(u.lat&&u.lng){const pin=document.getElementById('dmypin');if(pin){const [x,y]=ll2xy(u.lat,u.lng,400,200);pin.style.left=x+'%';pin.style.top=y+'%';}}
+    });
+  });
+}
+
+function buildDrRequests(pc, pending) {
+  pc.innerHTML=`<div class="slbl">الطلبات المتاحة (${pending.length})</div>`;
+  if(!pending.length){pc.innerHTML+=`<div class="tc" style="padding:40px;color:var(--mu);"><i class="ti ti-bell-off" style="font-size:40px;display:block;margin-bottom:12px;"></i><div class="f14">لا توجد طلبات حالياً</div></div>`;return;}
+  pending.forEach(r=>{
+    const d=document.createElement('div');d.className='card fi';d.style.borderColor='rgba(239,68,68,.2)';
+    d.innerHTML=`
+    <div class="f jb ac mb10">
+      <div class="f ac g12"><div class="av av36" style="background:rgba(239,68,68,.12);color:#FCA5A5;font-size:16px;">🆘</div>
+      <div><div class="f13 w5">${r.client_name}</div><div class="f11 tmu">${r.addr||''}</div></div></div>
+      <span class="badge bre">جديد</span>
+    </div>
+    <div class="csm mb10">
+      <div class="f jb mb6"><span class="f12 tmu">الخدمة</span><span class="f13 w5">${r.icon||'🔧'} ${r.svc}</span></div>
+      <div class="f jb mb6"><span class="f12 tmu">الوصف</span><span class="f12 tmu" style="max-width:60%;text-align:left;">${r.note||'—'}</span></div>
+      <div class="f jb"><span class="f12 tmu">الأجر</span><span class="f13 tgr w5">${r.price} ريال</span></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <button class="btn bre2 bsm" onclick="rejReq('${r.id}')">رفض</button>
+      <button class="btn bgr2 bsm" onclick="accReq('${r.id}','${r.lat}','${r.lng}')">✓ قبول والتوجيه</button>
+    </div>`;
+    pc.appendChild(d);
+  });
+}
+
+window.accReq = async function(reqId, lat, lng) {
+  const btn=event.target; btn.textContent='جارٍ القبول...'; btn.disabled=true;
+  await sbUpdateRequest(reqId,{status:'assigned',driver_id:S.user.id,driver_name:S.user.name});
+  await sbUpdateUser(S.user.id,{available:false,current_req_id:reqId});
+  S.user.available=false; S.user.current_req_id=reqId; saveSession();
+  const clat=parseFloat(lat)||21.4858, clng=parseFloat(lng)||39.1925;
+  window.open(`https://www.google.com/maps/dir/?api=1&destination=${clat},${clng}&travelmode=driving`,'_blank');
+  drPage('home');
+};
+window.rejReq = function(reqId){ drPage('requests'); };
+
+window.completeTrip = async function(reqId) {
+  await sbUpdateRequest(reqId,{status:'completed',completed_at:new Date().toISOString()});
+  await sbUpdateUser(S.user.id,{available:true,current_req_id:null,trips:(S.user.trips||0)+1});
+  S.user.available=true; S.user.current_req_id=null; S.user.trips=(S.user.trips||0)+1; saveSession();
+  toast('تم إتمام الرحلة بنجاح ✓'); drPage('home');
+};
+
+function buildDrTrips(pc) {
+  pc.innerHTML=`<div class="slbl">رحلاتي</div><div class="spin" style="margin-top:30px;"></div>`;
+  sbGetDriverTrips(S.user.id).then(trips=>{
+    pc.innerHTML=`<div class="slbl">رحلاتي</div>`;
+    if(!trips.length){pc.innerHTML+=`<div class="tc" style="padding:40px;color:var(--mu);"><i class="ti ti-list" style="font-size:40px;display:block;margin-bottom:12px;"></i><div class="f14">لا توجد رحلات بعد</div></div>`;return;}
+    const sm={assigned:{c:'bbl',t:'جارية'},completed:{c:'bgr',t:'مكتملة'},cancelled:{c:'bre',t:'ملغية'}};
+    trips.forEach(r=>{
+      const s=sm[r.status]||{c:'bam',t:'انتظار'};
+      const d=document.createElement('div');d.className='card fi';
+      d.innerHTML=`<div class="f jb ac"><div class="f ac g10"><div class="av av36" style="background:rgba(16,185,129,.12);color:#6EE7B7;font-size:16px;">${r.icon||'🔧'}</div><div><div class="f13 w5">${r.client_name}</div><div class="f11 tmu">${r.svc} · ${r.addr||''}</div></div></div><div style="text-align:left;"><span class="badge ${s.c}">${s.t}</span>${r.status==='completed'?`<div class="f11 tgr w5" style="margin-top:4px;">+${r.price} ر</div>`:''}</div></div>`;
+      pc.appendChild(d);
+    });
+  });
+}
+
+function buildDrProfile(pc) {
+  const u=S.user;
+  pc.innerHTML=`
+  <div class="card tc mb16 fi" style="padding:24px;">
+    <div class="av av60 avgr" style="margin:0 auto 14px;">${u.name[0]}</div>
+    <div class="f18 w7 mb4">${u.name}</div>
+    <div class="f12 tmu mb4">${u.email} · ${u.svc||''}</div>
+    <div class="f12 tmu mb14">${u.plate||''}</div>
+    <div style="display:flex;justify-content:center;gap:24px;">
+      <div><div class="f18 w7 tor">${u.trips||0}</div><div class="f11 tmu">رحلة</div></div>
+      <div><div class="f18 w7 tbl">${u.rating||4.9}</div><div class="f11 tmu">تقييم</div></div>
+    </div>
+  </div>
+  <div class="slbl">تعديل البيانات</div>
+  <div class="card mb14">
+    <div class="mb10"><div class="lbl">الاسم</div><input class="inp" id="dn" value="${u.name}"></div>
+    <div class="mb10"><div class="lbl">الجوال</div><input class="inp" id="dp" value="${u.phone||''}"></div>
+    <div class="mb10"><div class="lbl">نوع الخدمة</div><select class="inp" id="ds">${['سطحة','إطارات','بطارية','وقود','ميكانيك','قفل السيارة'].map(s=>`<option ${u.svc===s?'selected':''}>${s}</option>`).join('')}</select></div>
+    <div class="mb14"><div class="lbl">رقم اللوحة</div><input class="inp" id="dpl" value="${u.plate||''}"></div>
+    <button class="btn bor2 bfw" onclick="saveDr()">حفظ التغييرات</button>
+  </div>
+  <button class="btn bgh bfw" onclick="logout()"><i class="ti ti-logout"></i> تسجيل الخروج</button>`;
+}
+window.saveDr = async function(){
+  const p={name:document.getElementById('dn').value.trim(),phone:document.getElementById('dp').value.trim(),svc:document.getElementById('ds').value,plate:document.getElementById('dpl').value.trim()};
+  await sbUpdateUser(S.user.id,p);S.user={...S.user,...p};saveSession();toast('تم الحفظ ✓');
+};
+
+window.toggleAvail = async function(){
+  const on=document.getElementById('avchk').checked;
+  await sbUpdateUser(S.user.id,{available:on});
+  S.user.available=on;saveSession();
+  document.getElementById('dsdot').className='pdot '+(on?'on':'of');
+  const t=document.getElementById('dstxt');t.textContent=on?'متاح':'غير متاح';t.style.color=on?'var(--gr)':'var(--mu)';
+};
+window.getDrGPS = function(){
+  if(!navigator.geolocation){toast('GPS غير مدعوم');return;}
+  navigator.geolocation.getCurrentPosition(async p=>{
+    const lat=p.coords.latitude,lng=p.coords.longitude;
+    await sbUpdateUser(S.user.id,{lat,lng});
+    S.user.lat=lat;S.user.lng=lng;saveSession();
+    const lbl=document.getElementById('dgpslbl');if(lbl)lbl.textContent=lat.toFixed(4)+'، '+lng.toFixed(4);
+    toast('تم تحديد موقعك ✓');
+  },()=>toast('تعذّر تحديد الموقع'));
+};
+
+/* ═══════════════════════════════════════════
+   ADMIN APP
+═══════════════════════════════════════════ */
+let ADMIN_PAGE='dashboard';
+
+function renderAdmin(root) {
+  root.innerHTML=`
+  <div class="aframe">
+    <div class="sidebar">
+      <div class="slogo f ac g12">
+        <div style="width:36px;height:36px;background:var(--or);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🚗</div>
+        <div><div class="w7 f14 tor">فزعة</div><div class="f11 tmu">لوحة الإدارة</div></div>
+      </div>
+      <nav class="snav-list">
+        <div class="snav on" id="sn-dashboard" onclick="adminNav('dashboard')"><i class="ti ti-layout-dashboard"></i><span>لوحة التحكم</span></div>
+        <div class="snav" id="sn-map" onclick="adminNav('map')"><i class="ti ti-map-2"></i><span>الخريطة الحية</span></div>
+        <div class="snav" id="sn-requests" onclick="adminNav('requests')"><i class="ti ti-bell"></i><span>الطلبات</span></div>
+        <div class="snav" id="sn-drivers" onclick="adminNav('drivers')"><i class="ti ti-steering-wheel"></i><span>السائقون</span></div>
+        <div class="snav" id="sn-clients" onclick="adminNav('clients')"><i class="ti ti-users"></i><span>العملاء</span></div>
+        <div class="snav" id="sn-profile" onclick="adminNav('profile')"><i class="ti ti-settings"></i><span>الإعدادات</span></div>
+      </nav>
+      <div style="padding:14px;border-top:1px solid var(--br);">
+        <div class="f ac g10 mb10"><div class="av av36 avpu">${S.user.name[0]}</div><div><div class="f12 w5">${S.user.name}</div><div class="f11 tmu">مشرف</div></div></div>
+        <button class="btn bgh bfw bsm" onclick="logout()"><i class="ti ti-logout"></i> خروج</button>
+      </div>
+    </div>
+    <div style="flex:1;display:flex;flex-direction:column;overflow:hidden;">
+      <div class="topbar">
+        <div class="f16 w7" id="aptitle">لوحة التحكم</div>
+        <div class="f ac g8"><span class="pdot on"></span><span class="f12 tmu">مباشر</span><span class="f12 tmu" id="atime"></span></div>
+      </div>
+      <div class="pc" id="apc" style="flex:1;overflow-y:auto;"></div>
+    </div>
+  </div>`;
+  adminNav('dashboard');
+  setInterval(()=>{const e=document.getElementById('atime');if(e)e.textContent=new Date().toLocaleTimeString('ar-SA');},1000);
+}
+
+window.adminNav = function(pg) {
+  ADMIN_PAGE=pg;
+  document.querySelectorAll('.snav').forEach(n=>n.classList.remove('on'));
+  const sn=document.getElementById('sn-'+pg);if(sn)sn.classList.add('on');
+  const titles={dashboard:'لوحة التحكم',map:'الخريطة الحية',requests:'الطلبات',drivers:'السائقون',clients:'العملاء',profile:'إعدادات الحساب'};
+  const t=document.getElementById('aptitle');if(t)t.textContent=titles[pg]||'';
+  const pc=document.getElementById('apc');if(!pc)return;
+  pc.innerHTML=`<div class="spin" style="margin-top:40px;"></div>`;
+  if(pg==='dashboard') buildAdminDash(pc);
+  else if(pg==='map') buildAdminMap(pc);
+  else if(pg==='requests') buildAdminReqs(pc);
+  else if(pg==='drivers') buildAdminDrivers(pc);
+  else if(pg==='clients') buildAdminClients(pc);
+  else if(pg==='profile') buildAdminProfile(pc);
+};
+
+function updateAdminStats() {
+  if(ADMIN_PAGE==='dashboard') adminNav('dashboard');
+}
+
+function buildAdminDash(pc) {
+  Promise.all([sbGetRequests(), sbGetDrivers(), sbGetClients()]).then(([reqs,drivers,clients])=>{
+    const pend=reqs.filter(r=>r.status==='pending').length;
+    const active=reqs.filter(r=>r.status==='assigned').length;
+    const done=reqs.filter(r=>r.status==='completed').length;
+    const rev=reqs.filter(r=>r.status==='completed').reduce((s,r)=>s+r.price,0);
+    const avail=drivers.filter(d=>d.available).length;
+    pc.innerHTML=`
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:20px;" class="fi">
+      <div class="stcard"><div class="stnum tre">${pend}</div><div class="stlbl">انتظار</div></div>
+      <div class="stcard"><div class="stnum tam">${active}</div><div class="stlbl">نشط</div></div>
+      <div class="stcard"><div class="stnum tgr">${done}</div><div class="stlbl">مكتمل</div></div>
+      <div class="stcard"><div class="stnum tor">${rev}</div><div class="stlbl">إيراد (ر)</div></div>
+      <div class="stcard"><div class="stnum tbl">${avail}</div><div class="stlbl">سائق متاح</div></div>
+      <div class="stcard"><div class="stnum" style="color:var(--pu);">${clients.length}</div><div class="stlbl">عميل</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div>
+        <div class="slbl">آخر الطلبات</div>
+        ${reqs.slice(0,6).map(r=>{
+          const sm={pending:'bre انتظار',assigned:'bbl نشط',completed:'bgr مكتمل',cancelled:'bam ملغي'};
+          const [c,t]=(sm[r.status]||'bam انتظار').split(' ');
+          return `<div class="csm mb8 fi f jb ac"><div><div class="f13 w5">${r.icon||'🔧'} ${r.svc}</div><div class="f11 tmu">${r.client_name}</div></div><span class="badge ${c}">${t}</span></div>`;
+        }).join('')||'<div class="f12 tmu">لا توجد طلبات</div>'}
+      </div>
+      <div>
+        <div class="slbl">السائقون</div>
+        ${drivers.slice(0,6).map(d=>`<div class="csm mb8 fi f jb ac"><div class="f ac g8"><span class="pdot ${d.available?'on':'of'}"></span><div><div class="f13 w5">${d.name}</div><div class="f11 tmu">${d.svc||''}</div></div></div><span class="badge ${d.available?'bgr':'bam'}">${d.available?'متاح':'مشغول'}</span></div>`).join('')}
+      </div>
+    </div>`;
+  });
+}
+
+function buildAdminMap(pc) {
+  Promise.all([sbGetDrivers(), sbGetRequests()]).then(([drivers, allReqs])=>{
+    const reqs=allReqs.filter(r=>r.status==='pending'||r.status==='assigned');
+    pc.innerHTML=`
+    <div class="f jb ac mb12">
+      <div class="f ac g8 f12"><span class="pdot on"></span><span>متاح</span><span style="color:var(--am);">●</span><span>مشغول</span><span style="color:var(--re);">●</span><span>طلب</span></div>
+      <button class="btn bdk bsm" onclick="getAdminGPS()"><i class="ti ti-current-location"></i> موقعي</button>
+    </div>
+    <div class="mbox mb14" style="height:360px;" id="adminmap">
+      ${mapSVG(700,360)}
+      ${drivers.map((d,i)=>{
+        const top=15+((i*137+23)%65)+'%', left=10+((i*83+17)%80)+'%';
+        return `<div class="ddot ${d.available?'av2':'bz'}" id="adot_${d.id}" style="top:${top};left:${left};" onclick="adminDotInfo('${d.id}')" title="${d.name}"></div>`;
+      }).join('')}
+      ${reqs.map((r,i)=>`<div style="position:absolute;top:${25+((i*97+13)%50)+'%'};left:${20+((i*71+9)%60)+'%'};transform:translate(-50%,-50%);cursor:pointer;" title="${r.client_name}"><div style="width:14px;height:14px;border-radius:50%;background:var(--re);border:2px solid #FCA5A5;box-shadow:0 0 0 5px rgba(239,68,68,.2);animation:po 1.4s infinite;"></div></div>`).join('')}
+      <div class="mpin" id="adminmepin" style="top:50%;left:50%;display:none;"><div class="mpd bl"></div><div class="mpl bl">أنا</div></div>
+      <div id="amtt" style="display:none;position:absolute;background:var(--bg2);border:1px solid var(--br);border-radius:8px;padding:8px 12px;font-size:12px;z-index:10;pointer-events:none;max-width:180px;"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;">
+      ${drivers.map(d=>`<div class="csm f jb ac" id="adrvcard_${d.id}"><div class="f ac g8"><span class="pdot ${d.available?'on':'of'}"></span><div><div class="f13 w5">${d.name}</div><div class="f11 tmu">${d.svc||''}</div></div></div><span class="badge ${d.available?'bgr':'bam'}">${d.available?'متاح':'مشغول'}</span></div>`).join('')}
+    </div>`;
+    // Position driver dots using real coordinates
+    drivers.forEach(d=>{
+      if(d.lat&&d.lng){
+        const dot=document.getElementById('adot_'+d.id);
+        if(dot){const [x,y]=ll2xy(d.lat,d.lng);dot.style.left=x+'%';dot.style.top=y+'%';}
+      }
+    });
+  });
+}
+
+window.adminDotInfo = async function(id) {
+  const d=await sbGetUser(id);if(!d)return;
+  const tt=document.getElementById('amtt'),dot=document.getElementById('adot_'+id);
+  if(!tt||!dot)return;
+  tt.innerHTML=`<strong>${d.name}</strong><br><span class="tmu">${d.svc||''} · ⭐${d.rating||4.8} · ${d.trips||0} رحلة</span><br><span class="badge ${d.available?'bgr':'bam'}">${d.available?'متاح':'مشغول'}</span>`;
+  tt.style.display='block';tt.style.top=(parseFloat(dot.style.top)+3)+'%';tt.style.left=(parseFloat(dot.style.left)+2)+'%';
+  setTimeout(()=>tt.style.display='none',3000);
+};
+
+window.getAdminGPS = function(){
+  if(!navigator.geolocation)return;
+  navigator.geolocation.getCurrentPosition(p=>{
+    const lat=p.coords.latitude,lng=p.coords.longitude;
+    const pin=document.getElementById('adminmepin');if(!pin)return;
+    pin.style.display='block';const [x,y]=ll2xy(lat,lng);pin.style.left=x+'%';pin.style.top=y+'%';
+    toast('📍 '+lat.toFixed(4)+'، '+lng.toFixed(4));
+  });
+};
+
+function buildAdminReqs(pc) {
+  sbGetRequests().then(reqs=>{
+    pc.innerHTML=`<div class="slbl">جميع الطلبات (${reqs.length})</div>`;
+    if(!reqs.length){pc.innerHTML+='<div class="f12 tmu tc" style="padding:40px;">لا توجد طلبات</div>';return;}
+    const wrap=document.createElement('div');wrap.style.overflowX='auto';
+    const sm={pending:'bre انتظار',assigned:'bbl نشط',completed:'bgr مكتمل',cancelled:'bam ملغي'};
+    wrap.innerHTML=`<table class="tbl"><thead><tr><th>العميل</th><th>الخدمة</th><th>الموقع</th><th>الدفع</th><th>المبلغ</th><th>الحالة</th><th>السائق</th><th>إجراء</th></tr></thead><tbody>
+      ${reqs.map(r=>{
+        const [c,t]=(sm[r.status]||'bam انتظار').split(' ');
+        return `<tr><td><div class="f13 w5">${r.client_name}</div></td><td>${r.icon||'🔧'} ${r.svc}</td><td class="f12 tmu">${r.addr||'—'}</td><td class="f12">${r.pay==='cash'?'💵':'💳'}</td><td class="tgr w5">${r.price}ر</td><td><span class="badge ${c}">${t}</span></td><td class="f12">${r.driver_name||'—'}</td><td>${r.status==='pending'?`<button class="btn bor2 bsm" onclick="asgn('${r.id}')">تعيين</button>`:'—'}</td></tr>`;
+      }).join('')}
+    </tbody></table>`;
+    pc.appendChild(wrap);
+  });
+}
+
+window.asgn = async function(reqId) {
+  const drivers=await sbGetDrivers();
+  const avail=drivers.find(d=>d.available);
+  if(!avail){toast('لا يوجد سائق متاح');return;}
+  await sbUpdateRequest(reqId,{status:'assigned',driver_id:avail.id,driver_name:avail.name});
+  await sbUpdateUser(avail.id,{available:false,current_req_id:reqId});
+  toast('تم تعيين '+avail.name);adminNav('requests');
+};
+
+function buildAdminDrivers(pc) {
+  sbGetDrivers().then(drivers=>{
+    pc.innerHTML=`<div class="f jb ac mb16"><div class="slbl" style="margin:0;">السائقون (${drivers.length})</div><button class="btn bor2 bsm" onclick="addDrvModal()"><i class="ti ti-plus"></i> إضافة</button></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;">
+      ${drivers.map(d=>`<div class="card fi"><div class="f jb ac mb12">
+        <div class="f ac g12"><div class="av av44 avgr">${d.name[0]}</div><div><div class="f14 w5">${d.name}</div><div class="f11 tmu">${d.svc||''} · ${d.plate||''}</div></div></div>
+        <span class="badge ${d.available?'bgr':'bam'}">${d.available?'متاح':'مشغول'}</span></div>
+        <div class="csm mb10"><div class="f jb mb4"><span class="f11 tmu">البريد</span><span class="f11">${d.email}</span></div><div class="f jb mb4"><span class="f11 tmu">الجوال</span><span class="f11">${d.phone||'—'}</span></div><div class="f jb mb4"><span class="f11 tmu">الرحلات</span><span class="f11 tgr">${d.trips||0}</span></div><div class="f jb"><span class="f11 tmu">التقييم</span><span class="f11 tam">⭐${d.rating||4.8}</span></div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;"><button class="btn bdk bsm" onclick="editDrv('${d.id}')"><i class="ti ti-edit"></i> تعديل</button><button class="btn bre2 bsm" onclick="delDrv('${d.id}')"><i class="ti ti-trash"></i> حذف</button></div>
+      </div>`).join('')}
+    </div>`;
+  });
+}
+
+window.editDrv = function(id){
+  sbGetUser(id).then(d=>{
+    if(!d)return;
+    const pc=document.getElementById('apc');
+    const ov=document.createElement('div');ov.className='modal-ov open fi';
+    ov.innerHTML=`<div class="modal"><div class="f16 w7 mb16">تعديل بيانات السائق</div>
+      <div class="mb10"><div class="lbl">الاسم</div><input class="inp" id="eda" value="${d.name}"></div>
+      <div class="mb10"><div class="lbl">الجوال</div><input class="inp" id="edb" value="${d.phone||''}"></div>
+      <div class="mb10"><div class="lbl">الخدمة</div><select class="inp" id="edc">${['سطحة','إطارات','بطارية','وقود','ميكانيك','قفل السيارة'].map(s=>`<option ${d.svc===s?'selected':''}>${s}</option>`).join('')}</select></div>
+      <div class="mb16"><div class="lbl">اللوحة</div><input class="inp" id="edd" value="${d.plate||''}"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;"><button class="btn bdk" onclick="this.closest('.modal-ov').remove()">إلغاء</button><button class="btn bor2" onclick="saveEditDrv('${id}',this)">حفظ</button></div>
+    </div>`;pc.appendChild(ov);
+  });
+};
+window.saveEditDrv = async function(id,btn){
+  await sbUpdateUser(id,{name:document.getElementById('eda').value.trim(),phone:document.getElementById('edb').value.trim(),svc:document.getElementById('edc').value,plate:document.getElementById('edd').value.trim()});
+  btn.closest('.modal-ov').remove();toast('تم التحديث ✓');adminNav('drivers');
+};
+window.delDrv = async function(id){
+  if(!confirm('هل تريد حذف هذا السائق؟'))return;
+  await sbDeleteUser(id);toast('تم الحذف');adminNav('drivers');
+};
+window.addDrvModal = function(){
+  const pc=document.getElementById('apc');
+  const ov=document.createElement('div');ov.className='modal-ov open fi';
+  ov.innerHTML=`<div class="modal"><div class="f16 w7 mb16">إضافة سائق جديد</div>
+    <div class="mb10"><div class="lbl">الاسم</div><input class="inp" id="nda"></div>
+    <div class="mb10"><div class="lbl">البريد</div><input class="inp" id="ndb" type="email" style="direction:ltr;text-align:left;"></div>
+    <div class="mb10"><div class="lbl">كلمة المرور</div><input class="inp" id="ndc" type="password" style="direction:ltr;text-align:left;"></div>
+    <div class="mb10"><div class="lbl">الجوال</div><input class="inp" id="ndd"></div>
+    <div class="mb10"><div class="lbl">الخدمة</div><select class="inp" id="nde">${['سطحة','إطارات','بطارية','وقود','ميكانيك','قفل السيارة'].map(s=>`<option>${s}</option>`).join('')}</select></div>
+    <div class="mb16"><div class="lbl">اللوحة</div><input class="inp" id="ndf"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;"><button class="btn bdk" onclick="this.closest('.modal-ov').remove()">إلغاء</button><button class="btn bor2" onclick="saveNewDrv(this)">إضافة</button></div>
+  </div>`;pc.appendChild(ov);
+};
+window.saveNewDrv = async function(btn){
+  const n=document.getElementById('nda').value.trim(),e=document.getElementById('ndb').value.trim(),p=document.getElementById('ndc').value;
+  if(!n||!e){toast('يرجى تعبئة الحقول المطلوبة');return;}
+  btn.textContent='جارٍ...';btn.disabled=true;
+  try{
+    await sbRegister({name:n,email:e,password:p,phone:document.getElementById('ndd').value.trim(),svc:document.getElementById('nde').value,plate:document.getElementById('ndf').value.trim(),role:'driver',rating:5.0,trips:0,available:true,lat:21.4858,lng:39.1925});
+    btn.closest('.modal-ov').remove();toast('تم الإضافة ✓');adminNav('drivers');
+  }catch(err){btn.textContent='إضافة';btn.disabled=false;toast('البريد مسجل مسبقاً');}
+};
+
+function buildAdminClients(pc){
+  sbGetClients().then(clients=>{
+    pc.innerHTML=`<div class="slbl">العملاء (${clients.length})</div><div style="overflow-x:auto;"><table class="tbl"><thead><tr><th>الاسم</th><th>البريد</th><th>الجوال</th><th>التقييم</th><th>إجراء</th></tr></thead><tbody>
+      ${clients.map(c=>`<tr><td><div class="f ac g8"><div class="av av36 avbl">${c.name[0]}</div><span class="f13">${c.name}</span></div></td><td class="f12 tmu">${c.email}</td><td class="f12">${c.phone||'—'}</td><td>⭐${c.rating||5.0}</td><td><button class="btn bre2 bsm" onclick="delCli('${c.id}')"><i class="ti ti-trash"></i></button></td></tr>`).join('')}
+    </tbody></table></div>`;
+  });
+}
+window.delCli = async function(id){if(!confirm('حذف هذا العميل؟'))return;await sbDeleteUser(id);toast('تم الحذف');adminNav('clients');};
+
+function buildAdminProfile(pc){
+  const u=S.user;
+  pc.innerHTML=`<div class="card tc mb16 fi" style="padding:24px;max-width:400px;"><div class="av av60 avpu" style="margin:0 auto 14px;">${u.name[0]}</div><div class="f18 w7 mb4">${u.name}</div><div class="f12 tmu mb8">${u.email}</div><span class="badge bor">مشرف النظام</span></div>
+  <div class="card mb14" style="max-width:400px;"><div class="slbl">تعديل البيانات</div>
+    <div class="mb10"><div class="lbl">الاسم</div><input class="inp" id="apn" value="${u.name}"></div>
+    <div class="mb10"><div class="lbl">الجوال</div><input class="inp" id="app" value="${u.phone||''}"></div>
+    <div class="mb14"><div class="lbl">كلمة مرور جديدة</div><input class="inp" id="apw" type="password" style="direction:ltr;text-align:left;"></div>
+    <button class="btn bor2 bfw" onclick="saveAdmin()">حفظ التغييرات</button>
+  </div>`;
+}
+window.saveAdmin = async function(){
+  const p={name:document.getElementById('apn').value.trim(),phone:document.getElementById('app').value.trim()};
+  const pw=document.getElementById('apw').value;if(pw)p.password=pw;
+  await sbUpdateUser(S.user.id,p);S.user={...S.user,...p};saveSession();toast('تم الحفظ ✓');
+};
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+window.addEventListener('DOMContentLoaded', ()=>{
+  setTimeout(()=>{
+    if(loadSession()) render();
+    else renderChoice(document.getElementById('app-root'));
+  }, 600);
+});
+</script>
+</body>
+</html>
