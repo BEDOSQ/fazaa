@@ -374,9 +374,9 @@ window.renderChoice = function(root) {
   <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;width:100%;padding:24px;">
     <div style="width:64px;height:64px;background:var(--or);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:32px;margin-bottom:14px;box-shadow:0 8px 32px rgba(232,80,10,.4);">🚗</div>
     <div style="font-size:30px;font-weight:800;color:var(--or);margin-bottom:4px;">فزعة</div>
-    <div style="font-size:13px;color:var(--mu);margin-bottom:40px;">مساعدة على الطريق — 24/7</div>
+    <div style="font-size:13px;color:var(--mu);margin-bottom:40px;">نخدمك وين ماكنت</div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:560px;width:100%;">
-      ${[['client','👤','عميل','اطلب خدمة الآن','#3B82F6'],['driver','🚛','سائق','استقبل الطلبات','#10B981'],['admin','🛡️','إدارة','لوحة التحكم','#8B5CF6']].map(([r,ic,t,s,c])=>`
+      ${[['client','👨🏻‍💼','عميل','اطلب خدمة الآن','#3B82F6'],['driver','🚛','سائق','استقبل الطلبات','#10B981'],['admin','👩🏻‍💻','الادارة','لوحة التحكم','#8B5CF6']].map(([r,ic,t,s,c])=>`
       <div onclick="showLogin('${r}')" style="background:var(--bg3);border:1px solid var(--br);border-radius:18px;padding:26px 14px;text-align:center;cursor:pointer;transition:all .25s;" onmouseover="this.style.borderColor='${c}';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='var(--br)';this.style.transform=''">
         <div style="font-size:38px;margin-bottom:12px;">${ic}</div>
         <div style="font-size:15px;font-weight:700;margin-bottom:5px;">${t}</div>
@@ -397,8 +397,8 @@ window.renderChoice = function(root) {
 ═══════════════════════ */
 window.showLogin = function(role) {
   const root=document.getElementById('app-root');
-  const ic={client:'👤',driver:'🚛',admin:'🛡️'};
-  const nm={client:'عميل',driver:'سائق',admin:'إدارة'};
+  const ic={client:'👨🏻‍💼',driver:'🚛',admin:'👩🏻‍💻'};
+  const nm={client:'عميل',driver:'سائق',admin:'الادارة'};
   root.innerHTML=`
   <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;width:100%;padding:20px;">
     <div style="background:var(--bg3);border:1px solid var(--br);border-radius:22px;padding:30px;width:100%;max-width:380px;" class="fi">
@@ -499,7 +499,7 @@ window.clPage = function(pg) {
   tb.innerHTML=`
     <div class="f ac g12">
       <div style="width:34px;height:34px;background:var(--or);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 12px rgba(232,80,10,.35);">🚗</div>
-      <div><div style="font-size:15px;font-weight:700;color:var(--or);">فزعة</div><div class="f11 tmu">${pg==='home'?'أهلاً، '+u.name:pg==='order'?'طلب جديد':pg==='myorders'?'طلباتي':pg==='profile'?'حسابي':'تتبع'}</div></div>
+      <div><div style="font-size:15px;font-weight:700;color:var(--or);">فزعة</div><div class="f11 tmu">${pg==='home'?'مرحبا بعودتك، '+u.name:pg==='order'?'طلب جديد':pg==='myorders'?'طلباتي':pg==='profile'?'حسابي':'تتبع'}</div></div>
     </div>
     <div class="f ac g8">
       ${pg!=='home'&&pg!=='track'?`<button class="btn bgh bsm" onclick="clPage('home')"><i class="ti ti-arrow-right"></i></button>`:pg==='track'?`<button class="btn bgh bsm" onclick="clPage('order')"><i class="ti ti-arrow-right"></i></button>`:`<div class="av av36 avor" style="cursor:pointer;" onclick="clPage('profile')">${u.name[0]}</div>`}
@@ -542,22 +542,22 @@ function renderClient(root) {
 function buildClHome(pc) {
   pc.innerHTML=`
   <div class="card cor mb16 fi">
-    <div class="f16 w7 mb4">أنت في موقف طارئ؟</div>
-    <div class="f12 tmu mb14">اطلب المساعدة خلال ثوانٍ — نصلك أينما كنت</div>
-    <button class="btn bor2 bfw blg" onclick="startOrder()" style="font-size:16px;">🚨 اطلب مساعدة الآن</button>
+    <div class="f16 w7 mb4">اطلب الخدمة المناسب لك</div>
+    <div class="f12 tmu mb14">اطلب الخدمة خلال ثوانٍ — نصلك أينما كنت</div>
+    <button class="btn bor2 bfw blg" onclick="startOrder()" style="font-size:16px;">اطلب الآن</button>
   </div>
   <div class="slbl">الخدمات المتاحة</div>
   <div class="scg">
-    ${[['إطار مثقوب','🔧',60],['بطارية فارغة','🪫',80],['سطحة / نقل','🚛',150],['وقود','⛽',35],['ميكانيك','⚙️',100],['قفل السيارة','🔑',70]].map(([n,i,p])=>`
+    ${[['تلميع داخلي للسيارات الكبيرة','🚙',300],['تلميع داخلي للسيارات الوسط','🚐',250],['تلميع داخلي للسيارات الصغيرة','🚗',150],['غسيل سيارة كبيرة','🚙',55],['غسيل سيارة وسط','🚐',40],['غسيل سيارة صغير','🚗',30]].map(([n,i,p])=>`
     <div class="sc" onclick="qSvc('${n}','${i}',${p})">
       <div style="font-size:28px;margin-bottom:7px;">${i}</div>
       <div class="f12 w5">${n}</div>
-      <div class="f11 tmu">من ${p} ر</div>
+      <div class="f11 tmu">تبدا ${p} ريال</div>
     </div>`).join('')}
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:14px;">
-    <div class="stcard"><div class="stnum tor" id="avail-cnt">...</div><div class="stlbl">سائق متاح الآن</div></div>
-    <div class="stcard"><div class="stnum tam">4.2د</div><div class="stlbl">متوسط وقت الوصول</div></div>
+    <div class="stcard"><div class="stnum tor" id="avail-cnt">...</div><div class="stlbl">مندوب متاح</div></div>
+    <div class="stcard"><div class="stnum tam">4.2د</div><div class="stlbl">25د</div></div>
   </div>`;
   dbGetDrivers().then(ds=>{const e=document.getElementById('avail-cnt');if(e)e.textContent=ds.filter(d=>d.available).length+'+';});
 }
@@ -579,19 +579,18 @@ window.renderStep=function(n){
   if(n===1){
     c.innerHTML=`
     <div class="f16 w7 mb4">اختر الخدمة</div>
-    <div class="f12 tmu mb14">ما المشكلة التي تواجهها؟</div>
     <div class="scg">
-      ${[['إطار مثقوب','🔧',60],['بطارية فارغة','🪫',80],['سطحة / نقل','🚛',150],['وقود','⛽',35],['ميكانيك','⚙️',100],['قفل السيارة','🔑',70]].map(([n,i,p])=>`
-      <div class="sc ${ORDER.svc===n?'sl':''}" onclick="selSvc('${n}','${i}',${p},this)">
-        <div style="font-size:28px;margin-bottom:7px;">${i}</div>
-        <div class="f12 w5">${n}</div>
-        <div class="f11 tmu">من ${p} ر</div>
-      </div>`).join('')}
-    </div>
+    ${[['تلميع داخلي للسيارات الكبيرة','🚙',300],['تلميع داخلي للسيارات الوسط','🚐',250],['تلميع داخلي للسيارات الصغيرة','🚗',150],['غسيل سيارة كبيرة','🚙',55],['غسيل سيارة وسط','🚐',40],['غسيل سيارة صغير','🚗',30]].map(([n,i,p])=>`
+    <div class="sc" onclick="qSvc('${n}','${i}',${p})">
+      <div style="font-size:28px;margin-bottom:7px;">${i}</div>
+      <div class="f12 w5">${n}</div>
+      <div class="f11 tmu">تبدا ${p} ريال</div>
+    </div>`).join('')}
+  </div>
     <div class="mb12">
-      <div class="lbl">وصف المشكلة <span style="color:var(--re);">*</span></div>
-      <textarea class="inp" id="snote" rows="3" placeholder="مطلوب — مثال: الإطار الأمامي الأيمن انفجر على الطريق السريع..." style="resize:none;">${ORDER.note}</textarea>
-      <div id="nerr" style="display:none;color:#FCA5A5;font-size:11px;margin-top:5px;"><i class="ti ti-alert-circle"></i> يرجى كتابة وصف للمشكلة</div>
+      <div class="lbl">وصف المركبة <span style="color:var(--re);">*</span></div>
+      <textarea class="inp" id="snote" rows="3" placeholder="مطلوب — مثال: هونداي الانترا..." style="resize:none;">${ORDER.note}</textarea>
+      <div id="nerr" style="display:none;color:#FCA5A5;font-size:11px;margin-top:5px;"><i class="ti ti-alert-circle"></i> يرجى كتابة وصف المركبة</div>
     </div>
     <button class="btn bor2 bfw" id="n1btn" onclick="step2()" style="${!ORDER.svc?'opacity:.4;pointer-events:none;':''}">التالي — تحديد موقعي ←</button>`;
   }
@@ -601,12 +600,12 @@ window.renderStep=function(n){
     <div class="f12 tmu mb12">اضغط GPS أو اضغط على الخريطة لتحديد موقعك</div>
     <div class="mbox mb12" id="cmap" style="height:220px;"></div>
     <div style="display:flex;gap:8px;margin-bottom:12px;">
-      <button onclick="getGPS()" class="btn bor2" style="flex:1;"><i class="ti ti-current-location"></i> تحديد GPS</button>
+      <button onclick="getGPS()" class="btn bor2" style="flex:1;"><i class="ti ti-current-location"></i> تحديد الموقع تلقائي</button>
       <button onclick="useDefaultLoc()" class="btn bdk bsm" style="padding:0 12px;"><i class="ti ti-map-pin"></i> افتراضي</button>
     </div>
     <div class="card mb12" style="padding:12px;">
-      <div class="lbl">أو اكتب العنوان</div>
-      <input class="inp mb8" id="ainp" placeholder="طريق مكة–جدة، كم 47" value="${ORDER.addr||''}">
+      <div class="lbl"> اوصف العنوان او اضغط على تحديد الموقع تلقائي</div>
+      <input class="inp mb8" id="ainp" placeholder="مثال- جدة الحمدانية" value="${ORDER.addr||''}">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
         <div><div class="lbl">خط العرض</div><input class="inp" id="latin" value="${ORDER.lat||''}" placeholder="21.4858" readonly></div>
         <div><div class="lbl">خط الطول</div><input class="inp" id="lngin" value="${ORDER.lng||''}" placeholder="39.1925" readonly></div>
@@ -650,7 +649,7 @@ window.renderStep=function(n){
       <div class="info-row"><span class="f13 tmu">الخدمة</span><span class="f13 w5">${ORDER.icon} ${ORDER.svc}</span></div>
       <div class="info-row"><span class="f13 tmu">الوصف</span><span class="f12 tmu" style="max-width:60%;text-align:left;">${ORDER.note}</span></div>
       <div class="info-row"><span class="f13 tmu">الموقع</span><span class="f12" style="max-width:60%;text-align:left;">${ORDER.addr||'—'}</span></div>
-      <div class="info-row" style="border-top:1px solid var(--br);padding-top:10px;margin-top:6px;"><span class="f13 w7">المبلغ المتوقع</span><span class="f18 w7 tor">${ORDER.price} ريال</span></div>
+      <div class="info-row" style="border-top:1px solid var(--br);padding-top:10px;margin-top:6px;"><span class="f13 w7">اجمالي المبلغ</span><span class="f18 w7 tor">${ORDER.price} ريال</span></div>
     </div>
     <div class="popt ${ORDER.pay==='cash'?'sl':''}" id="pcash" onclick="selPay('cash')">
       <div class="f ac g12">
@@ -677,7 +676,7 @@ window.renderStep=function(n){
     <div class="tc" style="padding:20px 0 16px;">
       <div style="font-size:44px;margin-bottom:12px;">✅</div>
       <div class="f18 w7 mb4">تم إرسال طلبك!</div>
-      <div class="f12 tmu">رقم الطلب: <span class="tor w7">#FZ-${sid}</span></div>
+      <div class="f12 tmu">رقم الطلب: <span class="tor w7">#cl-${sid}</span></div>
     </div>
     <div class="card mb12">
       <div id="sstate" class="tc" style="padding:14px 0;">
@@ -730,7 +729,7 @@ window.getGPS=function(){
   },()=>useDefaultLoc());
 };
 window.useDefaultLoc=function(){
-  ORDER.lat=21.4858;ORDER.lng=39.1925;ORDER.addr='طريق مكة–جدة، كم 47';
+  ORDER.lat=21.4858;ORDER.lng=39.1925;ORDER.addr='جدة-الحمدانية';
   updLocFields();setLocOK();
   if(window._clientLocMap){
     window._clientLocMap.setView([ORDER.lat,ORDER.lng],13);
